@@ -22,8 +22,4 @@ use Tenancy\Support\DatabaseProvider;
 class Provider extends DatabaseProvider
 {
     protected $listener = ConfiguresTenantConnection::class;
-
-    protected $configs = [
-        __DIR__.'/resources/config/db-driver-sqlite.php',
-    ];
 }
